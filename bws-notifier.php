@@ -168,8 +168,6 @@ function bws_notifier_mailing() {
 			$uu = get_post_meta( get_the_ID(), 'bws-notifier-unsubcribed' );
 
 			// Creating a mail
-			$to = 'turgenoid@gmail.com';
-
 			$users = get_users( array(
 				'exclude'   =>  $uu,
 				'fields'    => array( 'user_email' )
